@@ -7,18 +7,31 @@
 	<h2 id="demo3"></h2>
     <h2 id="demo4"></h2>
 	<h2 id="demo5"></h2>
+	<h2 id="demo6"></h2>
+	<h2 id="demo7"></h2>
 		<script>
 			
 			var fruits = ["Apple", "Orange", "Pomegranate", "Kiwi", "Grapes"];
 			document.getElementById("demo").innerHTML = "Array : " + fruits.join(" * ");
+			
 			fruits.pop();
 			document.getElementById("demo2").innerHTML = "Pop : " + fruits.join(" * ");
+			
 			fruits.push("Cherry");
 			document.getElementById("demo3").innerHTML = "Push : " + fruits.join(" * ");
+			
 			fruits.shift();
 			document.getElementById("demo4").innerHTML = "Shift : " + fruits.join(" * ");
+			
 			fruits.unshift("Banana");
 			document.getElementById("demo5").innerHTML = "Unshift : " + fruits.join(" * ");
+			
+			fruits.splice(2, 0, "Lemon", "Pineapple");
+			document.getElementById("demo6").innerHTML = "Splice : " + fruits.join(" * ");
+			
+			fruits.sort();
+			document.getElementById("demo7").innerHTML = "Sort : " + fruits.join(" * ");
+			
 		</script>
 
 </body>
